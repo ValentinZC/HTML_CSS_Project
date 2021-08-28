@@ -1,0 +1,156 @@
+* {
+   box-sizing: border-box;
+}
+
+body, html {
+   padding: 0;
+   margin: 0;
+   font-family: 'Roboto', sans-serif;
+}
+
+h1, h2 {
+   font-weight: 400;
+   margin: 0 0 12% 0;
+   font-size: 40px;
+   letter-spacing: 1px;
+}
+
+p {
+   line-height: 1.5em;
+   margin: 10% 0 10% 0;
+   color: #262f32;
+}
+
+img {
+   width: 10%;
+   margin: 0 0 12% 0;
+}
+
+.wrapper {
+   display: grid;
+   grid-template: 3.15fr 1.85fr 1.85fr 3.15fr / repeat(4, 1fr);
+   width: 100%;
+   height: 2283px;
+}
+
+.box {
+   padding: 50px 30px;
+}
+
+.button {
+   display: inline-block;
+   border: 1px solid black;
+   border-radius: 5px;
+   padding: 2% 2%;
+   width: 40%;
+   text-align: center;
+}
+
+.button a {
+   text-decoration: none;
+   color: #262f32;
+}
+
+.box1 {
+   grid-column: 1 / 4;
+   background: url('img/bg1.jpg') no-repeat center / cover;
+}
+
+.box2 {
+   background: url('img/bg0.jpg') no-repeat center / cover;
+}
+
+.box3 {
+   grid-row: 2 / 4;
+   grid-column: 1 / 3;
+   background: url('img/bg3.jpg') no-repeat center / cover;
+}
+
+.box3 h2, .box5 h2, .box7 h2{
+   color: #fff;
+   font-weight: 300;
+}
+
+.box3 p, .box5 p, .box5 a, .box6 p, .box7 p {
+   color: #fff;
+}
+
+.box4 {
+   grid-row: 2 / 3;
+   grid-column: 3 / 5;
+   background: url('img/bg2.jpg') no-repeat center / cover;
+}
+
+.box5 {
+   grid-row: 3 / 4;
+   grid-column: 3 / 5;
+   background: url('img/bg4.jpg') no-repeat center / cover;
+}
+
+.box5 .button {
+   border: 1px solid#fff;
+}
+
+.box6{
+   background: url('img/bg5.jpg') no-repeat center / cover;
+   color: #fff;
+}
+
+.box6 img {
+   width: 30%;
+   margin: 80% 0 10% 0;
+}
+
+.box7 {
+   grid-column: 2 / 5;
+   background: url('img/bg6.jpg') no-repeat center / cover;
+}
+
+.box7 h2 {
+   margin: 0 0 5% 0;
+}
+
+.box7 p {
+   margin: 5% 0 5% 0;
+}
+
+.feedback {
+   height: 10%;
+}
+
+.form {
+   margin: 0 0 10% 0;
+   height: 30%;
+}
+
+input, textarea {
+   width: 35%;
+   background-color: transparent;
+   padding: 10px 20px;
+   margin: 0% 2% 0 0;
+   border: 1px solid #fff;
+   border-radius: 10px;
+   outline: none;
+   color: #fff;
+   cursor: pointer;
+}
+
+input::placeholder {
+   color: #fff;
+}
+
+textarea::placeholder {
+   color: #fff;
+   font-family: 'Roboto', sans-serif;
+}
+
+textarea {
+   display: block;
+   margin: 2% 0 0 0;
+   width: 72.5%;
+   height: 100%;
+}
+
+.box7 img {
+   width: 5%;
+}
