@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Museum</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="icon" href="assets/favicon.png">
+</head>
+
+<body>
+   <header>
+      <div class="container">
+         <div class="header">
+            <div class="header-logo">
+               <div class="header-logo__img"></div>
+               <div class="header-logo__text">Louvre</div>
+            </div>
+            <nav class="header-nav">
+               <ul class="header-nav__items">
+                  <li><a href="#visiting">Visiting</a></li>
+                  <li><a href="#explore">Explore</a></li>
+                  <li><a href="#video">Video</a></li>
+                  <li><a href="#tickets">Tickets</a></li>
+                  <li><a href="#contacts">Contacts</a></li>
+               </ul>
+            </nav>
+         </div>
+      </div>
+   </header>
+   <main>
+      <section id="welcome">
+         <div class="container">
+            <div class="welcom-intro">
+               <h1>Welcome <br> to the Louvre</h1>
+               <p>From the castle to the museum</p>
+               <button class="welcom-btn">Discover the Louvre</button>
+            </div>
+         </div>
+      </section>
+      <section id="visiting">
+         <div class="container">
+            <h2 class="title fixed">Virtual tour</h2>
+            <div class="visiting-cards">
+               <div class="visiting-cards__item">
+                  <img src="assets/Rectangle0.jpg" alt="Rectangle0">
+                  <h3 class="visiting-title">Royal Palace</h3>
+                  <p class="visiting-para">360° Virtual Tour</p>
+                  <p class="visiting-para">Google Street Panorama View</p>
+               </div>
+               <div class="visiting-cards__item">
+                  <img src="assets/Rectangle1.jpg" alt="Rectangle0">
+                  <h3 class="visiting-title">Denon Wing</h3>
+                  <p class="visiting-para">360° Virtual Tour</p>
+                  <p class="visiting-para">Google Street Panorama View</p>
+               </div>
+               <div class="visiting-cards__item">
+                  <img src="assets/Rectangle3.jpg" alt="Rectangle0">
+                  <h3 class="visiting-title">Colonnade Perrault</h3>
+                  <p class="visiting-para">360° Virtual Tour</p>
+                  <p class="visiting-para">Google Street Panorama View</p>
+               </div>
+               <div class="visiting-cards__item">
+                  <img src="assets/Rectangle4.jpg" alt="Rectangle0">
+                  <h3 class="visiting-title">Colonnade Perrault</h3>
+                  <p class="visiting-para">360° Virtual Tour</p>
+                  <p class="visiting-para">Google Street Panorama View</p>
+               </div>
+               <div class="visiting-cards__item">
+                  <img src="assets/Rectangle5.jpg" alt="Rectangle0">
+                  <h3 class="visiting-title">Mona Lisa</h3>
+                  <p class="visiting-para">360° Virtual Tour</p>
+                  <p class="visiting-para">Google Street Panorama View</p>
+               </div>
+               <div class="visiting-cards__item">
+                  <img src="assets/Rectangle6.jpg" alt="Rectangle0">
+                  <h3 class="visiting-title">Night Palace</h3>
+                  <p class="visiting-para">360° Virtual Tour</p>
+                  <p class="visiting-para">Google Street Panorama View</p>
+               </div>
+            </div>
+         </div>
+      </section>
+      <div class="container">
+         <section id="explore">
+
+            <div class="explore-text">
+               <h2 class="title white">Picture explore</h2>
+               <p>Las Meninas is a 1656 painting by Diego Velázquez, the leading artist of the Spanish Golden Age.</p>
+               <p>It was cleaned in 1984 to remove a <span>"yellow veil"</span> of dust that had gathered since the
+                  previous
+                  restoration in the 19th century.</p>
+               <p>The cleaning provoked furious protests, not because the picture had been damaged in any way, but
+                  because
+                  it looked different.</p>
+            </div>
+            <div class="explore-img">
+               <img src="assets/Rectangle_exp.png" alt="Rectangle_exp">
+            </div>
+
+         </section>
+      </div>
+
+      <section id="video">
+         <div class="container">
+            <div class="video-content">
+               <video width="1440" height="720" poster='assets/poster.png' controls>
+                  Your browser does not support the video tag.
+               </video>
+            </div>
+            <div class="video-text">
+               <h2 class="title">Video Journey</h2>
+               <p>Enter and visit one of the most famous museums in the world and enjoy masterpieces such as Mona Lisa
+                  or Hammurabi's Code</p>
+            </div>
+         </div>
+      </section>
+
+      <section id="tickets">
+         <div class="container">
+            <h2 class="title white">Buy tickets</h2>
+            <div class="tickets-content">
+               <div class="tickets-content__img">
+                  <img src="assets/Rectangle_tic.png" alt="Rectangle_tic">
+               </div>
+               <div class="tickets-content__shop">
+                  <div class="tickets-type">
+                     <div class="tickets-type-items">
+                        <p class="tickets-para">Ticket type</p>
+                        <form action="#">
+                           <p>
+                              <input type="radio" id="test1" name="radio-group" checked>
+                              <label for="test1">Permanent exhibition</label>
+                           </p>
+                           <p>
+                              <input type="radio" id="test2" name="radio-group">
+                              <label for="test2">Temporary exhibition</label>
+                           </p>
+                           <p>
+                              <input type="radio" id="test3" name="radio-group">
+                              <label for="test3">Combined Admission</label>
+                           </p>
+                        </form>
+                     </div>
+                  </div>
+                  <div class="tickets-amount">
+                     <p class="tickets-para">Amount</p>
+                     <p>Basic 18+</p>
+                     <div class="basic-count">
+                        <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                        <input type="number" min="0" max="20" value="1" readonly class="number">
+                        <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                     </div>
+                     <p>Senior 65+</p>
+                     <div class="senior-count">
+                        <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                        <input type="number" min="0" max="20" value="1" readonly class="number">
+                        <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                     </div>
+                     <p class="tickets-para">Total 220</p>
+                     <button class="tickets-btn">Buy Now</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section id="contacts">
+         <div class="container">
+            <h2 class="title">Contacts</h2>
+            <div class="contacts-info">
+               <div class="contacts-info__text">
+                  <h4>Palais Royal <br> Musee du Louvre</h4>
+                  <p>address: 75001 Paris, France</p>
+                  <p>phone: +33(0) 1 40 20 50 50</p>
+                  <p>mail: info@louvre.fr</p>
+               </div>
+               <div class="contacts-info__img">
+                  <img src="assets/Rectangle_map.png" alt="Rectangle0">
+               </div>
+            </div>
+         </div>
+      </section>
+   </main>
+   <footer>
+      <div class="container">
+         <div class="footer-content">
+            <div class="footer-items">
+               <div class="header-logo">
+                  <div class="header-logo__img"></div>
+                  <div class="header-logo__text">Louvre</div>
+               </div>
+               <nav class="footer-nav">
+                  <ul class="footer-nav__items">
+                     <li><a href="#welcom">Welcome</a></li>
+                     <li><a href="#visiting">Visiting</a></li>
+                     <li><a href="#explore">Explore</a></li>
+                  </ul>
+                  <ul class="footer-nav__items">
+
+                     <li><a href="#video">Video</a></li>
+                     <li><a href="#tickets">Tickets</a></li>
+                     <li><a href="#contacts">Contacts</a></li>
+                  </ul>
+
+               </nav>
+            </div>
+            <div class="social-network">
+               <div class="social-network__item"><img src="assets/youtube.png" alt=""></div>
+               <div class="social-network__item"><img src="assets/insta.png" alt=""></div>
+               <div class="social-network__item"><img src="assets/facebook.png" alt=""></div>
+               <div class="social-network__item"><img src="assets/twitter.png" alt=""></div>
+               <div class="social-network__item"><img src="assets/pad.png" alt=""></div>
+            </div>
+         </div>
+      </div>
+   </footer>
+
+</body>
+
+</html>
